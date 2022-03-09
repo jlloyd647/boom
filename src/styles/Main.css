@@ -1,0 +1,47 @@
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  max-width: 50%;
+}
+
+.grid-item {
+  background-color: #3384d0;
+  color: white;
+}
+
+.grid-body {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.grid-header {
+  padding: 15px;
+}
+
+.tootip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.greater {
+  color: blue;
+}
+/*# sourceMappingURL=Main.css.map */

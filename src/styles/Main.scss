@@ -1,0 +1,44 @@
+@import "../variables/Variables.scss";
+
+.grid-container {
+  display: grid;
+  max-width: 50%;
+}
+
+.grid-item {
+  background-color: $btBlue;
+  color: $btWhite;
+}
+
+.grid-body {
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-header {
+  padding: 15px;
+}
+
+.tootip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.greater {
+  color: blue;
+}

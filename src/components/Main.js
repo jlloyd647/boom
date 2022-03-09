@@ -33,7 +33,7 @@ export default function Main() {
           {getOrgApi.loading && <p>Org is Loading</p>}
           {getOrgApi.error && <p><Warning errorTxt={getOrgApi.error} /></p>}
         </div>
-        {/*Populates Org information*/}
+        {/*Populates Org information - React-Icon displayed is dependent on is_verified*/}
         <h1>{getOrgApi.data?.name} {getOrgApi.data?.is_verified ? <VscVerified /> : <VscUnverified />}</h1>
         <h5>{getOrgApi.data?.html_url}</h5>
         {/*Date with greater className is displayed in blue*/}

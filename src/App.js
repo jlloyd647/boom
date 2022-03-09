@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import Navbar from './components/Navbar.js'
+import './App.css'
 import Main from './components/Main.js'
 
 export default function App() {

@@ -16,6 +16,8 @@ React-Icons
 Axios
 React-Bootstrap
 
+#Solution Discussion
+
 There was a great article I found written by Ashraful Islam, published on BetterProgramming.pub - https://betterprogramming.pub/clean-api-call-with-react-hooks-3bd6438a375a
 This article helped me develop a very clean, custom hook, for use with the provided API. The simplicity behind this hook makes it easy to change endpoints by editing a single file.
 I choose to use React-Icons as well, to give a little more flare to a few items.

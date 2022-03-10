@@ -1,25 +1,26 @@
 .grid-container {
   display: -ms-grid;
   display: grid;
-  max-width: 35%;
-  min-width: 35%;
-}
-
-.grid-item {
   background-color: #3384d0;
   color: white;
+  width: 100%;
 }
 
-.grid-body {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.grid-header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
 }
 
 .greater {
   color: blue;
+}
+
+.avatar-image {
+  height: 200px;
+  width: 200px;
+  float: right;
+  padding-right: 50px;
 }
 /*# sourceMappingURL=Main.css.map */

@@ -1,18 +1,22 @@
 .flex-container {
   flex-wrap: wrap;
 }
+
 .flex-item {
   display: flex;
   flex-direction: column;
-
-  justify-content: center;
-  width: 500px;
   height: 125px;
   background-color: rgb(148, 196, 228);
   margin-bottom: 10px;
   text-align: center;
   border-radius: 25px;
-  padding: 0px 15px 0px 15px;
+  padding: 15px 15px 0px 15px;
+
+  font-size: 20px;
+  @media screen and (max-width: 650px) {
+    height: 350px;
+    font-size: 45px;
+   }
 }
 
 .warning {
@@ -28,14 +32,30 @@
 }
 
 .flex-mem-info {
-  margin-right: auto;
-  padding-top: 5%;
   text-align: left;
+  margin-left: 15px;
 }
+
 .mem-avatar {
   max-width: 100px;
   max-height: 100px;
-  padding: 15px;
   border-radius: 25px;
-  margin-right: auto;
+}
+
+.dt {
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto 0 5px 0;
+  white-space: nowrap;
+  @media screen and (max-width: 650px) {
+    height: 300px;
+    flex-direction: column;
+    font-size: 25px;
+   }
+}
+
+.dt-item {
+  padding: 0px 50px 0px 50px;
 }

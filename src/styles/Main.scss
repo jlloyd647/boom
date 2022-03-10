@@ -2,24 +2,23 @@
 
 .grid-container {
   display: grid;
-  max-width: 35%;
-  min-width: 35%;
-}
-
-.grid-item {
   background-color: $btBlue;
   color: $btWhite;
-}
-
-.grid-body {
-  justify-content: center;
-  align-items: center;
+  width: 100%;
 }
 
 .grid-header {
-  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .greater {
   color: blue;
+}
+
+.avatar-image {
+  height: 200px;
+  width: 200px;
+  float: right;
+  padding-right: 50px;
 }

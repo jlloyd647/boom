@@ -32,6 +32,7 @@ export default function Members() {
           </div>
         </div>
       ))}
+      {/*Creates a div for each Public Member*/}
       {getPublicMembersApi.data?.map((member) => (
         <div key={member.id} className='flex-item'>
           <div className='flex-mem'>

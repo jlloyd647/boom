@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Repos from '../components/Repos.js'
+import Repos from './Repos.js'
 import '../styles/Tabs.css'
 import Events from './Events.js'
 import Hooks from './Hooks.js'

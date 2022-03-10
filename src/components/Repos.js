@@ -20,10 +20,15 @@ export default function Repos() {
       {/*Creates a div for each Repos*/}
       {getReposApi.data?.map((repo) => (
         <div key={repo.id} className='flex-item'>
-          <div>{repo.name}</div>
+          <div>{repo.name} - {repo.language}</div>
           <a href={repo.html_url}>{repo.full_name}</a>
-          <div>Language: {repo.language}</div>
+          <div></div>
           <div>{repo.description}</div>
+          <div className='dt'>
+            <div className='dt-item'>Created At: {repo.created_at}</div>
+            <div className='dt-item'>Updated At: {repo.updated_at}</div>
+            <div className='dt-item'>Pushed At: {repo.pushed_at}</div>
+          </div>
         </div>
       ))}
     </div>

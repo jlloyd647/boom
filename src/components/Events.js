@@ -21,8 +21,9 @@ export default function Events() {
       {getEventsApi.data?.map((event) => (
         <div key={event.id} className='flex-item'>
           <div>{event.repo.name}</div>
-          <div>{event.repo.url}</div>
+          <div><a href={event.repo.url}>{event.repo.url}</a></div>
           <div>{event.type}</div>
+          <div className='dt'>Created At: {event.created_at}</div>
         </div>
       ))}
     </div>

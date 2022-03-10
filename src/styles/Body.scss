@@ -1,3 +1,5 @@
+@import "../variables/Variables.scss";
+
 .flex-container {
   flex-wrap: wrap;
 }
@@ -6,7 +8,7 @@
   display: flex;
   flex-direction: column;
   height: 125px;
-  background-color: rgb(148, 196, 228);
+  background-color: $btLightBlue;
   margin-bottom: 10px;
   text-align: center;
   border-radius: 25px;
@@ -16,7 +18,7 @@
   @media screen and (max-width: 650px) {
     height: 350px;
     font-size: 45px;
-   }
+  }
 }
 
 .warning {
@@ -53,7 +55,7 @@
     height: 300px;
     flex-direction: column;
     font-size: 25px;
-   }
+  }
 }
 
 .dt-item {

@@ -10,7 +10,7 @@ import IssuesBS from './IssuesBS'
 //Tabs used to display API informaition
 function TabsBS() {
   return (
-    <>
+    <div className='bs-tabs'>
       {/*Tabs used from React-Bootstrap*/}
       <Tabs 
         id='tabs'
@@ -18,23 +18,24 @@ function TabsBS() {
         transition={false}
         className='mb-3'
       >
-      <Tab className='bs-tab' eventKey='repos' title='Repos'>
-        <ReposBS />
-      </Tab>
-      <Tab eventKey='events' title='Events'>
-        <EventsBS />
-      </Tab>
-      <Tab eventKey='hooks' title='Hooks'>
-        <HooksBS />
-      </Tab>
-      <Tab eventKey='issues' title='Issues'>
-        <IssuesBS />
-      </Tab>
-      <Tab eventKey='members' title='Members'>
-        <MembersBS />
-      </Tab>
-    </Tabs>
-    </>
+        {/*Individual tabs for each API call*/}
+        <Tab className='bs-tab' eventKey='repos' title='Repos'>
+          <ReposBS />
+        </Tab>
+        <Tab eventKey='events' title='Events'>
+          <EventsBS />
+        </Tab>
+        <Tab eventKey='hooks' title='Hooks'>
+          <HooksBS />
+        </Tab>
+        <Tab eventKey='issues' title='Issues'>
+          <IssuesBS />
+        </Tab>
+        <Tab eventKey='members' title='Members'>
+          <MembersBS />
+        </Tab>
+      </Tabs>
+    </div>
   )
 }
 

@@ -23,6 +23,13 @@ export default function Main() {
     return (d1 < d2)
   }
 
+  //Function to create Tooltip
+  const renderTooltip = (props) => {
+    <Tooltip id='isVerified' {...props}>
+      URL is verifiecd
+    </Tooltip>
+  }
+
   return (
     <div className='grid-container'>
       <div className='grid-header'>
@@ -37,7 +44,9 @@ export default function Main() {
         </div>
         
         <div>
-          <h1>{getOrgApi.data?.name} {getOrgApi.data?.is_verified ? <VscVerified /> : <VscUnverified />}</h1>
+          {/*displays verified or unverified icon*/}
+          <h1>{getOrgApi.data?.name} {getOrgApi.data?.is_verified ? <VscVerified /> : <VscUnverified />}
+          </h1>
           <h5>{getOrgApi.data?.html_url}</h5>
           {/*Date with greater className is displayed in blue*/}
           <h6 className={` ${!compDates()?'greater':null}`}>
@@ -49,7 +58,7 @@ export default function Main() {
           <button className='bs-btn' onClick={() => setUseBootstrap(!useBootstrap)}>Use Bootstrap</button>
         </div>
       </div>
-      <div className='grid-body grid-item'>
+      <div className='grid-body'>
         {/*Calls Tabs component for body display*/}
         {useBootstrap?<Tabs />:<TabsBS />}
       </div>

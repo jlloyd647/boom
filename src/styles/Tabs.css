@@ -22,8 +22,7 @@
   border: 1px solid white;
 }
 
-.active {
-  background: #99bbff;
-  color: white;
+.bs-tabs {
+  background-color: #99bbff;
 }
 /*# sourceMappingURL=Tabs.css.map */

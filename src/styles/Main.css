@@ -23,4 +23,8 @@
   float: right;
   padding-right: 50px;
 }
+
+.grid-body {
+  min-height: 100%;
+}
 /*# sourceMappingURL=Main.css.map */

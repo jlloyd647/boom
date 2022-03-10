@@ -4,10 +4,6 @@ import orgApi from '../api/org'
 import '../styles/Main.css'
 
 import { VscVerified, VscUnverified } from 'react-icons/vsc'
-import Repos from '../components/Repos.js'
-import Events from '../components/Events.js'
-import Hooks from '../components/Hooks.js'
-import Issues from '../components/Issues.js'
 import Tabs from './Tabs'
 import Warning from './Warning'
 
@@ -34,6 +30,7 @@ export default function Main() {
           {getOrgApi.error && <p><Warning errorTxt={getOrgApi.error} /></p>}
         </div>
         {/*Populates Org information - React-Icon displayed is dependent on is_verified*/}
+        <img src={getOrgApi.data?.avatar_url} alt='img failed to load' />
         <h1>{getOrgApi.data?.name} {getOrgApi.data?.is_verified ? <VscVerified /> : <VscUnverified />}</h1>
         <h5>{getOrgApi.data?.html_url}</h5>
         {/*Date with greater className is displayed in blue*/}

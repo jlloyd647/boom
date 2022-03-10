@@ -4,6 +4,7 @@ import '../styles/Tabs.css'
 import Events from './Events.js'
 import Hooks from './Hooks.js'
 import Issues from './Issues.js'
+import Members from './Members.js'
 
 //Tabs used to display API informaition
 function Tabs() {
@@ -17,26 +18,22 @@ function Tabs() {
         <div className={`tab-head ${index===2?'active':null}`} onClick={()=>{setIndex(2)}}>Hooks</div>
         <div className={`tab-head ${index===3?'active':null}`} onClick={()=>{setIndex(3)}}>Issues</div>
         <div className={`tab-head ${index===4?'active':null}`} onClick={()=>{setIndex(4)}}>Members</div>
-        <div className={`tab-head ${index===5?'active':null}`} onClick={()=>{setIndex(5)}}>Avatars</div>
       </div>
       {/* divs are hidden unless index matches - Tabs display API components*/}
-      <div className='tabs-content' hidden={index!=0}>
+      <div className='tabs-content' hidden={index!==0}>
         <Repos />
       </div>
-      <div className='tabs-content' hidden={index!=1}>
+      <div className='tabs-content' hidden={index!==1}>
         <Events />
       </div>
-      <div className='tabs-content' hidden={index!=2}>
+      <div className='tabs-content' hidden={index!==2}>
         <Hooks />
       </div>
-      <div className='tabs-content' hidden={index!=3}>
+      <div className='tabs-content' hidden={index!==3}>
         <Issues />
       </div>
-      <div className='tabs-content' hidden={index!=4}>
-        Member Text
-      </div>
-      <div className='tabs-content' hidden={index!=5}>
-        Avatar Text
+      <div className='tabs-content' hidden={index!==4}>
+        <Members />
       </div>
     </div>
   )
